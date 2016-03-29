@@ -11,7 +11,7 @@
  * @package WooCommerce Checkout Fields
  */
 
-add_filter( 'woocommerce_form_field_args' , function ($args, $key, $value) use ($form_fields) {
+add_filter( 'woocommerce_form_field_args' , function ($args, $key, $value) {
   switch ($args['id']) {
     case 'billing_email':
     case 'billing_phone':
